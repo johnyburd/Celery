@@ -1,0 +1,23 @@
+import sys
+from PyQt4 import QtCore, QtGui
+
+# import pyuic generated user interface file
+from foo.celery-0.0.1 import *
+
+
+
+class MyMainWindow(QtGui.QMainWindow, Ui_MainWindow):
+    def __init__(self, parent=None):
+        super(MyMainWindow, self).__init__(parent)
+        self.setupUi(self)
+        # connect myaction_logic to myaction.toggled signal
+        self.myaction.toggled.connect(self.myaction_slot)
+
+    def myaction_slot(self):
+        pass # do something here
+
+if __name__ == "__main__":
+    app = QtGui.QApplication(sys.argv)
+    myapp = MyMainWindow()
+    myapp.show()
+    sys.exit(app.exec_())
