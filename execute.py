@@ -1,9 +1,9 @@
 from CeleryUI01 import *
 
-class UI_Celery(object):
+#class UI_Celery(object):
     #:def __init__(self, parent=None, name=None, fl=0):
        # object.__init__(self,parent,name,fl)
-    QtCore.QObject.connect(self.pushButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.sendText)
+ #   QtCore.QObject.connect(self.pushButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.sendText)
 
 #def sendText(self):
  #   self.label.setText(self.lineEdit.text())
